@@ -14,6 +14,7 @@ Escribe los resultados en un formato adecuado para el usuario """
 
 from datetime import datetime
 
+
 nombreCripto=input("Nombre de la Criptomoneda: ")
 cantCripto=float(input("Cantidad acumulada de la Criptomoneda: "))
 cotizacion=float(input("Cotización por US$ del día de la Criptomoneda: "))
