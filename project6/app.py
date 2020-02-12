@@ -1,6 +1,5 @@
 
 
-
 string cripto1, cripto2, cripto3
 
 int cant1, cant2, cant3
