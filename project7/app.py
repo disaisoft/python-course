@@ -22,4 +22,4 @@ while i < 5 :
     cotiz = float(input("Ingrese la cotización en USD de la moneda: "))
     valor = valor + (cant*cotiz)
 
-print("Usted tiene “+valor+” Dólares Americanos")
+print("Usted tiene {} Dólares Americanos" .format(valor))
