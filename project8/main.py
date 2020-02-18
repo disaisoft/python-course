@@ -20,7 +20,7 @@ finFuncion """
 
 
 
-funcion ConversionCriptomoneda(cantBTC,cantXRP: float): float
+funcion (ConversionCrip) (cantBTC,cantXRP: float): float
 var saldoTotalUSD, BTCUSD,XRPUSD: float;
 BTCUSD=7442.50;
 XRPUSD=0.660982;
