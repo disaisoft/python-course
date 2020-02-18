@@ -21,5 +21,6 @@ while i < 5 :
     cant = float(input("Ingrese la cantidad de la moneda: "))
     cotiz = float(input("Ingrese la cotización en USD de la moneda: "))
     valor = valor + (cant*cotiz)
+    
 
 print("Usted tiene {} Dólares Americanos" .format(valor))
