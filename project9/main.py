@@ -12,7 +12,7 @@ Recomendaciones:
 Considera el uso de funciones
 Recuerda las operaciones de lectura y escritura """
 
-funcion (capturar_moneda)();
+def capturar_moneda():
 cripto
 cant, cotiz
 cripto = read("ingrese el nombre la moneda: ")
