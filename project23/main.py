@@ -13,3 +13,34 @@ def esmoneda(cripto):
 
 def esnumero(numero):
     return numero.replace('.','',1).isdigit()
+
+monedas=[]
+cantidades=[]
+cotizaciones=[]
+i=0
+while i<3:
+    moneda=input("INgrese el nombre de la moneda: ")
+    while not esmoneda(moneda):
+        print("Moneda Invalida")
+        moneda=input("Ingrese el nombre de la moneda: ")
+    else:
+        monedas.append(moneda)
+        data = get_price(moneda+"USDT").json()
+        cotizaciones.append(float(data["price"]))
+        cantidad = input("Indique la cantidad de "+moneda+": ")
+        while not esnumero(cantidad):
+            cantidad = input("Indique la cantidad de "+moneda+": ")
+        else: 
+            cantidades.append(float(cantidad)
+    i+=1
+i=0
+total=0
+
+while i<3:
+    total=+cantidad[i]*cotizaciones[i]
+    print("Moneda: ", moneda[i],
+        ", cantidad: ", cantidades[i],
+        ", cotizaciones: ", cotizaciones[i],
+        ", Cantidad de USDT: ", cantidades[i]*cotizaciones[i])
+    i=+1
+print("Total en USDT es: ", str(total))
